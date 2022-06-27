@@ -5,46 +5,109 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 BGP-01-香港-多地优化, server: iepl-zebra.19900101.xyz, port: 902, type: ss, cipher: chacha20-ietf, password: Gqre0R, plugin: obfs, plugin-opts: {mode: http, host: 1d2e3501.itunes.apple.com}}
+  - {name: 🇸🇬 不能使用请更新订阅, server: 127.0.0.1, port: 80, type: vmess, uuid: 33985c23-1f90-4587-8d9f-b1fb5944bfa0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 127.0.0.1}, udp: true}
+  - {name: TG群组 https://t.me/AlisaV2, server: 127.0.0.1, port: 80, type: vmess, uuid: 33985c23-1f90-4587-8d9f-b1fb5944bfa0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 127.0.0.1}, udp: true}
+  - {name: 🇭🇰 香港 Ultra, server: hkultra.alisa.tk, port: 80, type: vmess, uuid: 33985c23-1f90-4587-8d9f-b1fb5944bfa0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hkultra.alisa.tk}, udp: true}
+  - {name: 🇯🇵 东京, server: tokyo.alisa.tk, port: 80, type: vmess, uuid: 33985c23-1f90-4587-8d9f-b1fb5944bfa0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: tokyo.alisa.tk}, udp: true}
+  - {name: 🇸🇬 新加坡, server: sjp.alisa.tk, port: 80, type: vmess, uuid: 33985c23-1f90-4587-8d9f-b1fb5944bfa0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sjp.alisa.tk}, udp: true}
+  - {name: 🇨🇳 镇江-1, server: zhenjiang.alisa.tk, port: 80, type: vmess, uuid: 33985c23-1f90-4587-8d9f-b1fb5944bfa0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.189.com}, udp: true}
+  - {name: 🇫🇷 法国, server: france.alisa.tk, port: 80, type: vmess, uuid: 33985c23-1f90-4587-8d9f-b1fb5944bfa0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: france.alisa.tk}, udp: true}
+  - {name: 🇬🇧 伦敦, server: london.alisa.tk, port: 80, type: vmess, uuid: 33985c23-1f90-4587-8d9f-b1fb5944bfa0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: london.alisa.tk}, udp: true}
+  - {name: 🇦🇪 迪拜, server: alq.alisa.tk, port: 80, type: vmess, uuid: 33985c23-1f90-4587-8d9f-b1fb5944bfa0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: alq.alisa.tk}, udp: true}
+  - {name: 🇷🇺 俄罗斯, server: russia.alisa.tk, port: 80, type: vmess, uuid: 33985c23-1f90-4587-8d9f-b1fb5944bfa0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: russia.alisa.tk}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 BGP-01-香港-多地优化
+      - 🇸🇬 不能使用请更新订阅
+      - TG群组 https://t.me/AlisaV2
+      - 🇭🇰 香港 Ultra
+      - 🇯🇵 东京
+      - 🇸🇬 新加坡
+      - 🇨🇳 镇江-1
+      - 🇫🇷 法国
+      - 🇬🇧 伦敦
+      - 🇦🇪 迪拜
+      - 🇷🇺 俄罗斯
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 BGP-01-香港-多地优化
+      - 🇸🇬 不能使用请更新订阅
+      - TG群组 https://t.me/AlisaV2
+      - 🇭🇰 香港 Ultra
+      - 🇯🇵 东京
+      - 🇸🇬 新加坡
+      - 🇨🇳 镇江-1
+      - 🇫🇷 法国
+      - 🇬🇧 伦敦
+      - 🇦🇪 迪拜
+      - 🇷🇺 俄罗斯
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 BGP-01-香港-多地优化
+      - 🇸🇬 不能使用请更新订阅
+      - TG群组 https://t.me/AlisaV2
+      - 🇭🇰 香港 Ultra
+      - 🇯🇵 东京
+      - 🇸🇬 新加坡
+      - 🇨🇳 镇江-1
+      - 🇫🇷 法国
+      - 🇬🇧 伦敦
+      - 🇦🇪 迪拜
+      - 🇷🇺 俄罗斯
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 BGP-01-香港-多地优化
+      - 🇸🇬 不能使用请更新订阅
+      - TG群组 https://t.me/AlisaV2
+      - 🇭🇰 香港 Ultra
+      - 🇯🇵 东京
+      - 🇸🇬 新加坡
+      - 🇨🇳 镇江-1
+      - 🇫🇷 法国
+      - 🇬🇧 伦敦
+      - 🇦🇪 迪拜
+      - 🇷🇺 俄罗斯
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 BGP-01-香港-多地优化
+      - 🇸🇬 不能使用请更新订阅
+      - TG群组 https://t.me/AlisaV2
+      - 🇭🇰 香港 Ultra
+      - 🇯🇵 东京
+      - 🇸🇬 新加坡
+      - 🇨🇳 镇江-1
+      - 🇫🇷 法国
+      - 🇬🇧 伦敦
+      - 🇦🇪 迪拜
+      - 🇷🇺 俄罗斯
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 BGP-01-香港-多地优化
+      - 🇸🇬 不能使用请更新订阅
+      - TG群组 https://t.me/AlisaV2
+      - 🇭🇰 香港 Ultra
+      - 🇯🇵 东京
+      - 🇸🇬 新加坡
+      - 🇨🇳 镇江-1
+      - 🇫🇷 法国
+      - 🇬🇧 伦敦
+      - 🇦🇪 迪拜
+      - 🇷🇺 俄罗斯
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -67,7 +130,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 BGP-01-香港-多地优化
+      - 🇸🇬 不能使用请更新订阅
+      - TG群组 https://t.me/AlisaV2
+      - 🇭🇰 香港 Ultra
+      - 🇯🇵 东京
+      - 🇸🇬 新加坡
+      - 🇨🇳 镇江-1
+      - 🇫🇷 法国
+      - 🇬🇧 伦敦
+      - 🇦🇪 迪拜
+      - 🇷🇺 俄罗斯
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
