@@ -32,7 +32,7 @@ proxies:
   - {name: 🇻🇳 越南-3号 2, server: 103.173.255.228, port: 28000, type: trojan, password: 7f77298a-cc14-45dd-a145-28f522443379, skip-cert-verify: true}
   - {name: 🇻🇳 越南-4号 2, server: 103.173.255.234, port: 28000, type: trojan, password: 7f77298a-cc14-45dd-a145-28f522443379, skip-cert-verify: true}
   - {name: 🇨🇳 台湾Hinet | 解锁流媒体 2, server: hinet.52147.top, port: 28000, type: trojan, password: 7f77298a-cc14-45dd-a145-28f522443379, sni: hinet.52147.top, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true}}
+  - {name: 🇨🇳 台湾, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: "true"}}
   - {name: 🇯🇵 jp3sgaz.gavmess-grpc, server: 20.222.51.248, port: 443, type: vmess, uuid: a6765cf2-4858-4cbd-bda8-eb6151729e3c, alterId: 0, cipher: auto, tls: true, network: grpc, servername: sgaz.cf, grpc-opts: {grpc-service-name: ""}}
   - {name: 🇭🇰 hk1dawz.cfvmess-grpc, server: 20.239.87.136, port: 443, type: vmess, uuid: decc8af4-16f7-4fc6-ac79-f83d6dd5d8a6, alterId: 0, cipher: auto, tls: true, network: grpc, servername: 20-239-87-136.nhost.00cdn.com, grpc-opts: {grpc-service-name: ""}}
   - {name: Alien, server: 43.155.101.188, port: 2292, type: vmess, uuid: 7731d35e-ddf5-47cb-f841-fa7d6e714735, alterId: 0, cipher: auto, tls: false}
